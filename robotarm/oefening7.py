@@ -4,8 +4,8 @@ from RobotArm import RobotArm
 robotArm = RobotArm('exercise 7')
 
 # Jouw python instructies zet je vanaf hier:
-m = True
-while m:
+
+while True:
     for x in range(6):
         robotArm.moveRight()
         robotArm.grab()
