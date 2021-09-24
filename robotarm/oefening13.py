@@ -1,28 +1,28 @@
-from random import getrandbits, randint
 from RobotArm import RobotArm
 
-robotArm = RobotArm('exercise 9')
+# Let op: hier start het anders voor een random level:
+robotArm = RobotArm()
+robotArm.randomLevel(1,7)
 
 # Jouw python instructies zet je vanaf hier:
+robotArm.speed = 3
+x = 1
 i = 1
-m = 1
-
 while i < 4:
-    for x in range(m):
+    for m in range(1):
         robotArm.grab()
-        for x in range(5):
+        for m in range(x):
             robotArm.moveRight()
         robotArm.drop()
-        for x in range(5):
+        for m in range(10):
             robotArm.moveLeft()
-    robotArm.moveRight()
-    
+        
     if i == 4:
         break
-    m += 1
-    if m == 5:
-        break
+    x += 1
+    if x == 8:
+        break        
 i += 1
-
+    
 # Na jouw code wachten tot het sluiten van de window:
 robotArm.wait()
