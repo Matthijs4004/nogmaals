@@ -18,7 +18,7 @@ while i < 4:
     x += 1
     if x == 7:
         i == False
-i += 1
+    i += 1  
 
 
 # Na jouw code wachten tot het sluiten van de window:

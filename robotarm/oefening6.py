@@ -7,16 +7,13 @@ robotArm = RobotArm('exercise 6')
 
 for x in range(7):
     robotArm.moveRight()
-robotArm.grab()
-robotArm.moveRight()
-robotArm.drop()
 
-for x in range(7):
-    for x in range(2):
-        robotArm.moveLeft()
+for x in range(8):
     robotArm.grab()
     robotArm.moveRight()
     robotArm.drop()
+    for x in range(2):
+        robotArm.moveLeft()
 
 
 # Na jouw code wachten tot het sluiten van de window:
